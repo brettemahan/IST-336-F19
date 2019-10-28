@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Sales page for Mahan's Bicycles.
+Use: To display information about the fictional shop, Mahan's Bicycles.
+Author: Brette Mahan
+School/Term: Southern Illinois University, Spring 2019
+Developed: October 12, 2019
+Tested: October 13, 2019; Passed on Firefox and Chrome browsers with responsive page options enabled, checked through multiple different mobile types.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <meta name="description" content="A bicycle sales webpage for a store specializing in bicycles, unicycles, tricycles, and biking accessories.">
+        <meta name="keywords" content="bicycles, tricycles, bikes, unicycles, trikes, mahan, SIU, southern illinois university, rentals, bike sales">
+        <title>Sales</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.scss">
+        <link rel="shortcut icon" href="favicon.ico">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+            $(document) .ready(function() {
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="sales.htm">Sales</a></li>
+            <li><a href="rentals.htm">Rentals</a></li>
+            <li><a href="services.htm">Services</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <video id="videoplayer" controls autoplay loop>
+            <source src="Bike%20-%208812.mp4">
+        </video>
+        <h1>Bicycle Sales</h1>
+        <p>On this page you'll find the bicycles we currently have for sale.</p>
+    </header>
+    <main>
+        <figure class="trike">
+            <img src="trike.jpg" alt="Not-Your-Kids-Trike">
+            <figcaption>Not-Your-Kids Tricycle - $1200</figcaption>
+        </figure>
+        <figure class="mountainking">
+            <img src="mountainbike.jpg" alt="Bike of the Mountain King">
+            <figcaption>Bike of the Mountain King - $1400</figcaption>
+        </figure>
+        <figure class="cityslicker">
+            <img src="citybike.jpg" alt="The Cityslicker">
+            <figcaption>The Cityslicker - $1000</figcaption>
+        </figure>
+        <figure class="cycleops">
+            <img src="unicycle.jpg" alt="The Cycle-Ops">
+            <figcaption>The Cycle-Ops - $400</figcaption>
+        </figure>
+    </main>
+</body>
+</html>

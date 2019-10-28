@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Rentals page for Mahan's Bicycles.
+Use: To display information about the fictional shop, Mahan's Bicycles.
+Author: Brette Mahan
+School/Term: Southern Illinois University, Spring 2019
+Developed: October 12, 2019
+Tested: October 13, 2019; Passed on Firefox and Chrome browsers with responsive page options enabled, checked through multiple different mobile types.
+******************************************************************************
+-->
+
+<html lang="en-US">
+<head>
+        <title>Bike Rentals</title>
+        <meta charset="utf-8">
+        <meta name="description" content="A bicycle rental webpage for a store specializing in bicycles, unicycles, tricycles, and biking accessories.">
+        <meta name="keywords" content="bicycles, tricycles, bikes, unicycles, trikes, mahan, SIU, southern illinois university, rentals, bike rentals">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.scss">
+        <link rel="shortcut icon" href="favicon.ico">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+            $(document) .ready(function() {
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav id="mobile_menu"></nav>   
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="sales.htm">Sales</a></li>
+            <li><a href="rentals.htm">Rentals</a></li>
+            <li><a href="services.htm">Services</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+<!-- Rental Information, pricing, extras, etc. -->
+        <h1>Bicycle Rentals</h1>
+        <p> We offer a selection of street and mountain bikes for rent. They can be rented by the day or by the week. Our bikes are high-quality and will not fail you no matter where you take them.</p>
+        <h3>Rental Information</h3>
+        <p>Bicycles can be rented daily or weekly. All our mountain bikes can be rented for $60 per day or $375 per week. Our city bikes can be rented for $40 per day or $250 per week. Helmets and visibility vests can be provided upon request for an extra $5 per day or $30 per week.
+        <br><br>In the event of a broken chain, flat tire, or other minor issues affecting your ability to use your rental bike, Mahan's Bicycles will fix the bike free of charge.<br><br>For crashes and total bicycle destruction, we offer insurance for $10 per day, or $50 per week. In the event of total bicycle destruction without insurance or failure to return a bicycle, the renter is responsible for damages or the cost of replacing the bicycle.</p>
+        
+        
+        <h3>The bikes we currently offer for rent:</h3>
+    </header>
+<!-- The bikes available for rent, mountainbikes and citybikes, these bikes were pulled randomly from bicyclewarehouse.com and images sourced from Amazon. -->    
+    <div class="mountainbikes">
+       
+                <h3>Mountain Bikes</h3>
+                <h4>Raleigh Eva 2 Hybrid - $60/day</h4>
+                <p>The raleigh Eva 2 is a versatile bike with an aluminum frame and 24 gears to choose from.</p>
+                <img src="Raleigh2.jpg" alt="Raleigh Eva 2" width="300">
+                <h4>Diamondback Lux - $60/day</h4>
+                <p>The Diamondback Lux is a great trail bike with 27.5" wheels, perfect for maneuvering trails.</p>
+                <img src="Diamondback.jpg" alt="Diamondback Luxe" width="300">
+                
+    </div>
+    
+    <div class="citybikes">
+                <h3>City Bikes</h3>
+                <h4>Raleigh Amelia 1 - $40/day</h4>
+                <p>The Amelia 1 is a great, versatile city bike which excels on rougher terrain and gravel.</p>
+                <img src="Amelia1.jpg" alt="Raleigh Amelia 1" width="300">
+                <h4>Diamondback Arden 4 - $40/day</h4>
+                <p>The Diamondback Arden 4 is our top of the line city bike with a sleek frame and excellent city riding.</p>
+                <img src="Arden4.jpg" alt="Diamondback Arden 4" width="300">
+                
+    </div> 
+    <footer>
+ <!-- Contact Information -->      
+        <h3>Contact Us</h3>
+        <p><strong>Send mail to:</strong><br>
+            1234 Main Street<br>
+            Suite 100<br>
+            Diamondale, IL 62902<br>
+            <br>
+            <strong>Call us:</strong><br>
+             1-800-555-2190<br>
+             <br>          
+            <em><a href="https://www.siu.edu/">Page created by a Southern Illinois University student in Benton, IL.</a></em></p> 
+
+    </footer>
+</body>
+</html>

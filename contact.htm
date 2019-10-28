@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Contact page for Mahan's Bicycles.
+Use: To display information about the fictional shop, Mahan's Bicycles.
+Author: Brette Mahan
+School/Term: Southern Illinois University, Spring 2019
+Developed: October 12, 2019
+Tested: October 13, 2019; Passed on Firefox and Chrome browsers with responsive page options enabled, checked through multiple different mobile types.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <meta name="description" content="A contact web page for Mahan's Bicycles.">
+        <meta name="keywords" content="bicycles, tricycles, bikes, unicycles, trikes, mahan, SIU, southern illinois university, rentals, contact">
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.scss">
+        <link rel="shortcut icon" href="favicon.ico">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+            $(document) .ready(function() {
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+<body>
+    <!-- Navigation Menu -->   
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="sales.htm">Sales</a></li>
+            <li><a href="rentals.htm">Rentals</a></li>
+            <li><a href="services.htm">Services</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+    </nav>
+    <form id="contactform" method="post">
+    <fieldset id="contact">
+        <legend>Contact Us</legend>
+        <label for="full_name">Full Name:</label>
+        <input type="text" name="name" id="full_name" required autofocus placeholder="John Smith"
+                maxlength="25" minlength="15" ><br><br>
+        <label for="address">Address:</label>
+        <input type="text" name="address" id="address" required 
+                minlength="15"
+                maxlength="50"
+                placeholder="123 Main St."><br><br>
+        <label for="city">City:</label>
+        <input type="text" name="city" id="city" required 
+                minlength="4"
+                maxlength="25"
+                placeholder="Los Angeles"><br><br>
+        <label for="state">State:</label>
+            <select id="state">
+                <option value="California">California</option>
+                <option value="Illinois">Illinois</option>
+                <option value="Missouri">Missouri</option>
+                <option value="Montana">Montana</option>
+                <option value="Nebraska">Nebraska</option>
+                <option value="Oregon">Oregon</option>
+                <option value="Virginia">Virginia</option>
+                <option value="Washington">Washington</option>
+            </select><br><br>
+        <label for="zip">Zip Code:</label>
+        <input type="text" name="zip" id="zip" required
+                minlength="5"
+                maxlength="10"
+                pattern="\d{5}([\-]\d{4})?"
+                title="Must be 99999 or 99999-9999"
+                placeholder="99999 or 99999-9999"><br><br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="phone" id="phone" placeholder="999-999-9999" required
+                minlength="10"
+                maxlength="12"
+                pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+                title="Must be in 999-999-9999 format"><br><br>
+        <label for="email">E-Mail:</label>
+        <input type="email" name="email" id="email" required
+                minlength="10"
+                maxlength="25"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required><br><br>
+        <label for="subdate">Submission Date:</label>
+        <input type="date" name="subdate" id="subdate" required><br><br>
+        <fieldset><!-- Checkboxes for inquiry type -->
+        <legend>Inquiry Type:</legend>
+        <input type="checkbox" name="salesbox" id="salesbox" value="Sales">
+        <label for="salesbox">Sales</label><br>
+        <input type="checkbox" name="servicebox" id="servicebox" value="Service">
+        <label for="servicebox">Service</label><br>
+        <input type="checkbox" name="rentalbox" id="rentalbox" value="Rental">
+        <label for="rentalbox">Rental</label><br><br>
+        </fieldset><br>
+        <fieldset><!-- Radio buttons for bicycles -->
+        <legend>Bicycle Type:</legend>
+        <label for="tricycle">Not-Your-Kids Tricycle</label>
+        <input type="radio" name="tricycle" id="tricycle" value="tricycle"><br><br>
+        <label for="mountainking">Bike of the Mountain King</label>
+        <input type="radio" name="mountainking" id="mountainking" value="mountainking"><br><br>
+        <label for="cityslicker">The Cityslicker</label>
+        <input type="radio" name="cityslicker" id="cityslicker" value="cityslicker"><br>
+        <label for="cycleops">The Cycleops</label>
+        <input type="radio" name="cycleops" id="cycleops" value="cycleops"><br>
+        </fieldset><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" placeholder="Please enter your message here." required
+                minlength="20"
+                maxlength="200"
+        ></textarea>
+    </fieldset><br>
+    </form>
+    <!-- Form buttons -->
+    <form method="post" action="response.htm">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

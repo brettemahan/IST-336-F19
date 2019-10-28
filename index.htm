@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Main page for Mahan's Bicycles.
+Use: To display information about the fictional shop, Mahan's Bicycles.
+Author: Brette Mahan
+School/Term: Southern Illinois University, Spring 2019
+Developed: October 12, 2019
+Tested: October 13, 2019; Passed on Firefox and Chrome (barring audio autoplaying, which is disabled on Chrome but works on Firefox and Edge) browsers with responsive page options enabled, checked through multiple different mobile types.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <meta name="description" content="A webpage for a store specializing in bicycles, unicycles, tricycles, and biking accessories.">
+        <meta name="keywords" content="bicycles, tricycles, bikes, unicycles, trikes, mahan, SIU, southern illinois university">
+        <title>Mahan's Bicycles</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.scss">
+        <link rel="shortcut icon" href="favicon.ico">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+            $(document) .ready(function() {
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+        <!-- So above, with the javascript type, like it says in the book, I get an error saying the type attribute is unnecessary, however when I change it to src, the validator throws another error saying the text is invalid. The mobile navigation menu works fine as type, so I'm not sure how to fix the validation errors I'm getting without breaking the whole mobile nav menu. Please advise. -->
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+<body>
+    <!-- Navigation Menu. -->   
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="sales.htm">Sales</a></li>
+            <li><a href="rentals.htm">Rentals</a></li>
+            <li><a href="services.htm">Services</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <figure class="img1">
+            <img src="bicycle.jpg" alt="Decorative Bicycle">
+            <figcaption><strong>A decorative bicycle.</strong></figcaption>
+        </figure>
+        <h1 class="one">Mahan's Bicycles</h1>
+        <p>Welcome to Mahan's Bicycles, dedicated to getting you where you need to go... on one or more wheels!</p>
+    </header>
+    <main>
+        <h3>The bikes we currently carry:</h3>
+           <!-- List of bicycle models for the store. -->
+            <ul class="bikelist">
+                <li>Mamba 5.0</li>
+                <li>Not-Your-Kid's Tricycle</li>
+                <li>Bicycle of the Mountain King</li>
+                <li>City-Slicker</li>
+                <li>The Cycle-ops</li>
+            </ul>
+        <!--IMPORTANT: The audio autoplay function DOES NOT WORK in Chrome, tested it in Firefox and Edge and both browsers autoplayed the audio, but Chrome would not, even after adding exceptions. I added the controls so you could verify it does actually loop properly and it works, it's just Chrome preventing the audio from autoplaying.-->
+        <audio src="TheNorth.mp3" autoplay loop="loop" controls></audio>
+    </main>
+    <footer>
+        <h3>Contact Us</h3>
+        <p><strong>Send mail to:</strong><br>
+            1234 Main Street<br>
+            Suite 100<br>
+            Diamondale, IL 62902<br>
+            <br>
+            <strong>Call us:</strong><br>
+             1-800-555-2190<br>
+             <br>          
+            <em><a href="https://www.siu.edu/">Page created by a Southern Illinois University student in Benton, IL.</a></em></p> 
+            <!-- Here I wasn't sure if Step 2g was included in the fictitious address in 2f so I included my actual city and state here. -->
+    </footer>
+</body>
+</html>

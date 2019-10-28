@@ -1,0 +1,387 @@
+/* 
+*****************************************************************************
+Title: Main CSS style page
+Use: The CSS main style page for Brette's Bicycles
+Author: Brette Mahan
+School/Term: Southern Illinois University, Spring 2019
+Developed: October 21, 2019
+Tested: October 21, 2019; Passed on Firefox and Chrome browsers with responsive page options enabled, checked through multiple different mobile types.
+******************************************************************************/
+
+html {
+    background-color: #E8FEFF;
+}
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 100%;
+    width: 95%;
+    max-width: 1200px;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+h1, h2, h3, h4 {
+    padding-left: .1em;
+    padding-right: .1em;
+    padding-top: .1em;
+    padding-bottom: .1em;
+}
+
+p {
+    padding-left: .1em;
+    padding-right: .1em;
+}
+
+#contact label{
+    float: left;
+    text-align: right;
+    width: 20%;
+}
+
+#contact input {
+    display: inline-block;
+    clear: both;
+}
+.bikelist ul{
+    padding: .1em;
+}
+/* The CSS formatting for the images on the main index.htm page. */
+.img1 img{
+    width: 30%;
+    border-style: solid;
+    border-color: #26B0FF;
+    border-radius: .1em;
+    /*border-width: .4em;*/
+    position: relative; 
+}
+.img1:hover {
+    content: url('../Cyclist.jpg');
+    width: 30%;
+    border-style: solid;
+    border-color: #26B0FF;
+    border-radius: .1em;
+    /*border-width: .4em;*/
+    position: relative; 
+}
+
+.trike img {
+    width: 50%;
+    border-style: solid;
+    border-color: #26B0FF;
+    border-radius: .1em;
+    border-width: .4em;
+    position: relative; 
+}
+.mountainking img {
+    width: 50%;
+    border-style: solid;
+    border-color: #26B0FF;
+    border-radius: .1em;
+    border-width: .4em;
+    position: relative; 
+}
+.cityslicker img {
+    width: 50%;
+    border-style: solid;
+    border-color: #26B0FF;
+    border-radius: .1em;
+    border-width: .4em;
+    position: relative; 
+}
+.cycleops img {
+    width: 50%;
+    border-style: solid;
+    border-color: #26B0FF;
+    border-radius: .1em;
+    border-width: .4em;
+    position: relative; 
+}
+/* Mountainbikes and their images. */
+.mountainbikes {
+    float: left;
+    width: 40%;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    border-style: double;
+    border-width: .2em;
+    border-radius: .2em;
+    border-color: #26B0FF;
+}
+
+.mountainbikes img {
+    border-style: solid;
+    border-width: .1em;
+    border-color: #2758A8;
+    height: 100%;
+    width: 100%;
+}
+/* City/street bikes and their images. */
+.citybikes {
+    float: right;
+    width: 40%;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    border-style: double;
+    border-width: .2em;
+    border-radius: .2em;
+    border-color: #26B0FF;
+}
+.citybikes img {
+    border-style: solid;
+    border-width: .1em;
+    border-color: #2758A8;
+    height: 100%;
+    width: 100%;
+}
+#videoplayer {
+    height: 50%;
+    width: 50%;
+    border: solid;
+    border-color: #26B0FF;
+}
+/* CSS for table on services page */
+table {
+    border-collapse: collapse;
+}
+table th {
+    border: solid;
+    background: #6ba0c2;
+}
+table td {
+    border: solid;
+}
+tr:nth-of-type(odd) {
+    background: #94c9eb;
+}
+tr:nth-of-type(even) {
+    background: #d9effc;
+}
+#mobile_menu {
+    display:none;
+}
+/* CSS for the navigation menu */
+#nav_menu {
+    background-color: #345180;
+}
+#nav_menu ul {
+    list-style: none;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #345180;
+    width: 181px;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu ul li.lastitem a {
+    width: 181px;
+}
+#nav_menu ul li {
+    float: left;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+    float: none;
+}
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+    background-color: #647591;
+}
+/* Tablets landscape */
+@media only screen and (max-width: 959px) {
+    #nav_menu {display: none;}
+    #mobile_menu {display: block;}
+    .slicknav_manu {background-color: #345180 !important;}
+}
+/* Smartphone landscape/ tablet portrait */    
+@media only screen and (max-width: 767px) {
+    #nav_menu {display: none;}
+    #mobile_menu {display: block;}
+    .slicknav_menu {background-color: #345180 !important;}
+
+    /* The image on the index page, it properly resizes for me without this, but since it isn't resizing properly when submitted, I added this to see if it would work. */
+    .img1 img{
+    width: 25%;
+    border-style: solid;
+    border-color: #26B0FF;
+    border-radius: .1em;
+    border-width: .4em;
+    position: relative; 
+    }
+    .img1:hover {
+    content: url('../Cyclist.jpg');
+    width: 25%;
+    border-style: solid;
+    border-color: #26B0FF;
+    border-radius: .1em;
+    border-width: .4em;
+    position: relative; 
+    }
+
+    body {
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+    
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    /* For accessibility, table headers get moved off-screen. */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tr {
+        border: solid;
+    }
+    td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        white-space: nowrap;
+    }
+    td:nth-of-type(1):before { content: "Service"; }
+	td:nth-of-type(2):before { content: "Description"; }
+	td:nth-of-type(3):before { content: "Cost"; }
+    td:nth-of-type(4):before { content: "Turnaround Time";}
+    
+    header, footer p { text-align: center;}
+    footer p {margin-right: 0;}
+}
+/* Smartphones */    
+@media only screen and (max-width: 479px) {
+    #nav_menu {display: none;}
+    #mobile_menu {display: inline;}
+    .slicknav_menu {background-color: #345180 !important;}
+    
+    /* The image on the index page, it properly resizes for me without this, but since it isn't resizing properly when submitted, I added this to see if it would work. */
+    
+    #contact input {
+        margin: 10px;
+    }
+    #contact label {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .img1 img{
+    width: 20%;
+    border-style: solid;
+    border-color: #26B0FF;
+    border-radius: .1em;
+    border-width: .4em;
+    position: relative; 
+    }
+    .img1:hover {
+    content: url('../Cyclist.jpg');
+    width: 20%;
+    border-style: solid;
+    border-color: #26B0FF;
+    border-radius: .1em;
+    border-width: .4em;
+    position: relative; 
+    }
+    
+    /* Mountainbikes and their images. */
+    .mountainbikes {
+        width: 80%;
+        margin: auto;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-bottom: 1em;
+        border-style: double;
+        border-width: .2em;
+        border-radius: .2em;
+        border-color: #26B0FF;
+    }
+
+    .mountainbikes img {
+        border-style: solid;
+        border-width: .1em;
+        border-color: #2758A8;
+        height: 100%;
+        width: 100%;
+    }
+    /* City/street bikes and their images. */
+    .citybikes {
+        width: 80%;
+        margin: auto;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-bottom: 1em;
+        border-style: double;
+        border-width: .2em;
+        border-radius: .2em;
+        border-color: #26B0FF;
+    }
+    .citybikes img {
+        border-style: solid;
+        border-width: .1em;
+        border-color: #2758A8;
+        height: 100%;
+        width: 100%;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    /* For accessibility, table headers get moved off-screen. */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tr {
+        border: solid;
+    }
+    td {
+        border: none;
+        border-bottom: solid;
+        position: relative;
+        padding-left: 50%;
+    }
+    td:before {
+        position: absolute;
+        width: 45%;
+        white-space: nowrap;
+    }
+    td:nth-of-type(1):before { content: "Service"; }
+	td:nth-of-type(2):before { content: "Description"; }
+	td:nth-of-type(3):before { content: "Cost"; }
+    td:nth-of-type(4):before { content: "Turnaround Time";}
+    
+}
+footer {
+    clear: both;
+    padding-top: 10px;
+}
+

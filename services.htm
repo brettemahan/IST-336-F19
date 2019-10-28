@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Services page for Mahan's Bicycles.
+Use: To display information about the fictional shop, Mahan's Bicycles.
+Author: Brette Mahan
+School/Term: Southern Illinois University, Spring 2019
+Developed: October 21, 2019
+Tested: October 21, 2019; Passed on Firefox and Chrome browsers with responsive page options enabled, checked through multiple different mobile types.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <meta name="description" content="A bicycle services webpage for a store specializing in bicycles, unicycles, tricycles, and biking accessories.">
+        <meta name="keywords" content="bicycles, tricycles, bikes, unicycles, trikes, mahan, SIU, southern illinois university, rentals, bike rentals, service, bike services">
+        <title>Services</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.scss">
+        <link rel="shortcut icon" href="favicon.ico">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+            $(document) .ready(function() {
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="sales.htm">Sales</a></li>
+            <li><a href="rentals.htm">Rentals</a></li>
+            <li><a href="services.htm">Services</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Services Offered</h1>
+    <h3>Adjustments</h3>
+    <table>
+        <tr>
+           <th>Service</th>
+           <th>Description</th>
+           <th>Cost</th>
+           <th>Turnaround Time</th> 
+        </tr>
+        <tr>
+            <td>Safety Checks</td>
+            <td>An overall inspection of the bicycle, includes brake and frame checking.</td>
+            <td>$10</td>
+            <td>1 - 2 hours*</td>
+        </tr>
+        <tr>
+            <td>Brake Adjustments</td>
+            <td>Tightening or loosening of brakes and repair of brake lines if necessary.</td>
+            <td>$35</td>
+            <td>1 business day*</td>
+        </tr>
+        <tr>
+            <td>Clean Up & Lube</td>
+            <td>Cleaning/detailing of bicycle frame and lubrication of bicycle chain.</td>
+            <td>$20</td>
+            <td>1 business day*</td>
+        </tr>
+        <tr>
+            <td>Seat & Handlebar Adjustments</td>
+            <td>Adjustments of handlebars and seat, including tightening of bolts holding both in place</td>
+            <td>$5</td>
+            <td>1 - 2 hours*</td>
+        </tr>
+        <tr>
+            <td>Calibrate Gears</td>
+            <td>Gear calibration, fixing stuck gears, and repair of any bent gear spokes.</td>
+            <td>$20</td>
+            <td>1 - 2 business days*</td>
+        </tr>
+        <tr>
+            <td>Adjust Wheel Hubs</td>
+            <td>Wheel hub adjustment, replacing bearings and tightening of loose hubs.</td>
+            <td>$30</td>
+            <td>2 business days*</td>
+        </tr>
+    </table>
+    <h3>Repairs</h3>
+    <table>
+        <tr>
+           <th>Service</th>
+           <th>Description</th>
+           <th>Cost</th>
+           <th>Turnaround Time</th> 
+        </tr>
+        <tr>
+            <td>Cable Replacement</td>
+            <td>Replacement of broken, cut, or malfunctioning cables.</td>
+            <td>$20</td>
+            <td>2 business days*</td>
+        </tr>
+        <tr>
+            <td>Parts Replacement</td>
+            <td>Replacement of any parts broken or missing.</td>
+            <td>Varies</td>
+            <td>1 - 2 business days*</td>
+        </tr>
+        <tr>
+            <td>Repair Bike Chain</td>
+            <td>Bicycle chain repair and reattachment.</td>
+            <td>$15</td>
+            <td>1 business day*</td>
+        </tr>
+        <tr>
+            <td>Tire Repair</td>
+            <td>Repair of tire and inner tube leaks or replacement of tire.</td>
+            <td>$30</td>
+            <td>1 business day*</td>
+        </tr>
+        <tr>
+            <td>Other Miscellanious Repairs</td>
+            <td>See technician for details.</td>
+            <td>Varies</td>
+            <td>Varies</td>
+        </tr>
+    </table>
+    <p>*Turnaround times vary with number of customers and workload.</p>
+</body>
+</html>
